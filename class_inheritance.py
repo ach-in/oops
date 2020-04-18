@@ -67,7 +67,7 @@ class Prof(MITPerson):
 			return MITPerson.say(self,toWhom,'I really liked your paper on ' +
 			something)
 		else:
-			return self.lecture(something) 
+			return self.lecture(toWhom,something) 
 
 
 class Faculty(object):
@@ -89,7 +89,13 @@ class Faculty(object):
 		 return self.members[self.place-1] 
 
 
-achin = Person("Achin", "Parashar")
+achin = UG("Achin", "Parashar")
+eric = Prof("Prof.", "Grimson", "Full")
+
+
+
+# print(eric.say(achin,"You are very clever"))
+print (eric)
 
 
 
