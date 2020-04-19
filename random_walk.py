@@ -61,15 +61,15 @@ def performTrial(time, f):
 		distances.append(distance)
 	return distances
 
-drunk = Drunk('Homer Simpson')		
-for i in range(3):
-	f = Field(drunk, Location(0, 0))
-	distances = performTrial(500, f)
-	pylab.plot(distances)
-	pylab.title('Homer\'s Random Walk')
-	pylab.xlabel('Time')
-	pylab.ylabel('Distance from Origin')
-pylab.show()
+# drunk = Drunk('Homer Simpson')		
+# for i in range(3):
+# 	f = Field(drunk, Location(0, 0))
+# 	distances = performTrial(500, f)
+# 	pylab.plot(distances)
+# 	pylab.title('Homer\'s Random Walk')
+# 	pylab.xlabel('Time')
+# 	pylab.ylabel('Distance from Origin')
+# pylab.show()
 def performSim(time, numTrials):
 	distLists = []
 	for trial in range(numTrials):
@@ -91,7 +91,11 @@ def ansQuest(maxTime, numTrials):
 	pylab.ylabel('distance')
 	pylab.xlabel('time')
 	pylab.title('Average Distance vs. Time (' + str(len(distLists)) + ' trials)')
+	
+ansQuest(500, 300)
+pylab.show()
+	
+# ansQuest
 
-	ansQuest(500, 300)
-	# pylab.show()
-	pylab.savefig('books_read.png') 
+
+
