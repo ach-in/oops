@@ -1,11 +1,4 @@
-#### MY CODE
-
-
-
-
-
-
-
+#### Not edited
 
 import math, random, pylab
 
@@ -71,7 +64,7 @@ def performTrial(time, f):
 drunk = Drunk('Homer Simpson')		
 for i in range(3):
 	f = Field(drunk, Location(0, 0))
-	distances = performTrial(15500, f)
+	distances = performTrial(500, f)
 	pylab.plot(distances)
 	pylab.title('Homer\'s Random Walk')
 	pylab.xlabel('Time')
